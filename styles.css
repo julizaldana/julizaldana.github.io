@@ -62,3 +62,27 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+
+
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+
+.header-text p{
+    font-family: sans-serif;
+    font-style: italic; 
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #15F0D6;
+}
