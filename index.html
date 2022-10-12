@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Hoja De Vida | Julio Zaldaña</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e774627848.js" crossorigin="anonymous"></script>
 </head>
 
 
@@ -20,8 +21,8 @@
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Acerca de mí</a></li>
-                <li><a href="#">Habilidades</a></li>
                 <li><a href="#">Portafolio</a></li>
+                <li><a href="#">Pasatiempos</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
@@ -43,31 +44,42 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">Acerca de mí</h1>
-                <p>Mi nombre es Julio Zaldaña, soy un guatemalteco de 19 años de edad.</p>
+                <p>Mi nombre es Julio Zaldaña, soy un guatemalteco de 19 años de edad. Me gusta leer, escribir, escuchar música, editar fotos y vídeos, al igual que practicar mi deporte favorito, el fútbol.
+                Actualmente, estoy cursando el cuarto semestre de la carrera de Ingeniería en Ciencias y Sistemas en la Universidad de San Carlos de Guatemala.
+                </p>
 
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('habilidades')">Habilidades</p>
                     <p class="tab-links" onclick="opentab('educacion')">Educación</p>
                     <p class="tab-links" onclick="opentab('experiencia')">Experiencia</p>
+                    <p class="tab-links" onclick="opentab('ingles')">English Experience</p>
 
                 </div>
                 <div class="tab-contents active-tab" id="habilidades">
                     <ul>
-                        <li><span>Estudiante Ingeniería en Ciencias y Sistemas</span><br>Programador y voluntario en IEEE: Computer Society USAC</li>
                         <li><span>Lenguajes de programación</span><br>Conocimientos generales de Java y Python</li>
                         <li><span>Desarrollo Web</span><br>Conocimientos básicos de Flask de Python, HTML y CSS</li>
+                        <li><span>Edición de vídeos</span><br>Conocimientos de Sony Vegas Pro y Adobe Premiere Pro</li>             
                     </ul>
                 </div>
                 <div class="tab-contents" id="educacion">
                     <ul>
                         <li><span>2021 - Presente</span><br>Estudiante de Ingeniería en Ciencias y Sistemas en Facultad de Ingeniería USAC</li>
                         <li><span>2008 - 2020</span><br>Bachillerato en Ciencias y Letras en Colegio Bilingue Campo Real</li>
+                        <li><span>2006 - 2007</span><br>Colegio Claret</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experiencia">
                     <ul>
                         <li><span>2022 - Presente</span><br>Voluntario a talleres en IEEE: Computer Society USAC</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="ingles">
+                    <ul>
+                        <li><span>2022 - Presente</span><br>Calusac English Level 16</li>
+                        <li><span>2020</span><br>Toefl (78/120)</li>
+                        <li><span>2019</span><br>Elash (155/200)</li>
                     </ul>
                 </div>
 
@@ -76,6 +88,28 @@
     </div>
 
 
+</div>
+
+<!-----------Portafolio de trabajos en USAC------------>
+
+<div id="trabajos">
+    <div class="container">
+        <h1 class="sub-title">Portafolio de trabajos</h1>
+        <div class="trabajos-list">
+            <div>
+                <i class="fa-brands fa-github"></i>
+                <h2>Proyectos GitHub</h2>
+                <p>Tareas, prácticas y proyectos elaborados para los cursos del área profesional de la carrera.</p>
+                <a href="#">Saber más</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-folder-open"></i>
+                <h2>Prácticas Iniciales USAC</h2>
+                <p>Vídeos, documentos y material elaborado para el curso de Prácticas Iniciales de la carrera.</p>
+                <a href="#">Saber más</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -90,8 +124,12 @@
         for(tabcontent of tabcontents){
             tabcontent.classList.remove("active-tab");
         }
-
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
     }
+
+
+
 </script>
 
 </body>
