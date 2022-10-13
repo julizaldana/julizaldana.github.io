@@ -30,7 +30,7 @@
         </nav>
         <div class="header-text">
             <p>Estudiante de Ingeniería en Ciencias y Sistemas</p>
-            <h1>Hola, Yo soy <br> <span>Julio</span> Zaldaña</h1>
+            <h1>Hola, Yo soy <br> <span class="auto-input"></span></h1>
         </div>
     </div>
 </div>
@@ -55,8 +55,6 @@
                     <p class="tab-links active-link" onclick="opentab('habilidades')">Habilidades</p>
                     <p class="tab-links" onclick="opentab('educacion')">Educación</p>
                     <p class="tab-links" onclick="opentab('experiencia')">Experiencia</p>
-                    <p class="tab-links" onclick="opentab('ingles')">English Experience</p>
-
                 </div>
                 <div class="tab-contents active-tab" id="habilidades">
                     <ul>
@@ -75,16 +73,9 @@
                 <div class="tab-contents" id="experiencia">
                     <ul>
                         <li><span>2022 - Presente</span><br>Voluntario a talleres en IEEE: Computer Society USAC</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="ingles">
-                    <ul>
-                        <li><span>2022 - Presente</span><br>Calusac English Level 16</li>
-                        <li><span>2020</span><br>Toefl (78/120)</li>
-                        <li><span>2019</span><br>Elash (155/200)</li>
-                    </ul>
-                </div>
 
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -212,6 +203,16 @@
 
 </script>
 
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed(".auto-input", {
+        strings: ["Julio Zaldaña", "Estudiante","Editor de Vídeos"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+    })
+</script>
 
 </body>
 </html>
